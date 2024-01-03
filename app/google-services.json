@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "128680913780",
+    "firebase_url": "https://research-ai-d8edb-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "research-ai-d8edb",
+    "storage_bucket": "research-ai-d8edb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128680913780:android:365675e9a688cb8ee2da21",
+        "android_client_info": {
+          "package_name": "com.example.researchai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT_L_o6mi4JkAPYvDq2qrEGtDdLTacwG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

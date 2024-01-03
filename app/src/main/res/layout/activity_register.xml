@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_margin="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="text"
+            android:hint="@string/name_hint"
+            android:id="@+id/nameET"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"
+            tools:ignore="Autofill" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_hint"
+            android:id="@+id/emailET"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"
+            tools:ignore="Autofill" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textPassword"
+            android:hint="@string/passowrd_hint"
+            android:id="@+id/passwordET"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"
+            tools:ignore="Autofill" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textPassword"
+            android:hint="@string/confirm_password_hint"
+            android:id="@+id/confirmpassET"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"
+            tools:ignore="Autofill" />
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp"
+        android:indeterminateTint="@color/colorPrimary"
+        android:id="@+id/progressBar"
+        android:layout_above="@+id/registerBtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+        android:layout_centerHorizontal="true"
+        android:minWidth="160dp"
+        android:text="@string/register_btn_name"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn"/>
+
+
+</RelativeLayout>
