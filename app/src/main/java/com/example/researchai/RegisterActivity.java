@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -28,6 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
     private Button registerBtn;
     private EditText nameEdit,emailEdit,passwordEdit,confirmPasswordEdit;
     private ProgressBar progressBar;
+    private TextView loginTV;
 
     private FirebaseAuth auth;
 
@@ -53,10 +55,19 @@ public class RegisterActivity extends AppCompatActivity {
         passwordEdit = findViewById(R.id.passwordET);
         confirmPasswordEdit = findViewById(R.id.confirmpassET);
         progressBar = findViewById(R.id.progressBar);
+        loginTV = findViewById(R.id.login_tv);
 
     }
 
     private void clickListener(){
+
+        loginTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                finish();
+            }
+        });
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,6 +130,7 @@ public class RegisterActivity extends AppCompatActivity {
         map.put("name", nameEdit.getText().toString());
         map.put("email", email);
         map.put("uid", user.getUid());
+        map.put("image"," ");
 
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Users");

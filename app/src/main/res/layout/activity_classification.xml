@@ -1,88 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ClassificationActivity">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@drawable/main_gb"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_alignParentTop="true"
-            android:background="@android:color/transparent">
-
-            <!--            <TextView-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="match_parent"-->
-            <!--                android:-->
-        </androidx.appcompat.widget.Toolbar>
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true">
+            android:layout_height="match_parent">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profileImage"
-                android:layout_width="90dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_height="90dp"
-                app:civ_border_color="#656464"
-                app:civ_border_width="2dp" />
-
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/profileImage"
-                android:gravity="center_vertical"
-                android:orientation="vertical"
-                android:padding="8dp">
+                android:text="@string/classification_tab"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
 
-                <TextView
-                    android:id="@+id/nameTv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/username_profile"
-                    android:textColor="#fff"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/emailTv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_gmail_com"
-                    android:textColor="#fff"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
 
         </RelativeLayout>
 
-    </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
 
 
     <LinearLayout
+        android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
         android:gravity="center"
         android:padding="4dp">
 
@@ -103,12 +62,12 @@
                     android:layout_height="50dp"
                     android:src="@drawable/classification"
                     android:layout_centerInParent="true"
-                    android:contentDescription="@string/image_classification" />
+                    android:contentDescription="@string/anopheles_arabiensis" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/classification"
+                    android:text="@string/anopheles_arabiensis_name"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:textSize="18sp"
@@ -139,12 +98,12 @@
                     android:layout_height="50dp"
                     android:src="@drawable/object_detection"
                     android:layout_centerInParent="true"
-                    android:contentDescription="@string/image_classification" />
+                    android:contentDescription="@string/anopheles_gambiae" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/object_detection"
+                    android:text="@string/anopheles_gambiae_name"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:textSize="18sp"
@@ -176,12 +135,12 @@
                     android:layout_height="50dp"
                     android:src="@drawable/info"
                     android:layout_centerInParent="true"
-                    android:contentDescription="@string/image_classification" />
+                    android:contentDescription="@string/classification_page" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/about"
+                    android:text="@string/about_classification"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:textSize="18sp"
@@ -198,4 +157,7 @@
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>

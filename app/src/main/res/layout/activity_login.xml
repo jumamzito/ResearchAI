@@ -4,15 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
     tools:context=".LoginActivity">
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="42sp"
+        android:text="@string/login_name"
+        android:textColor="#fff"
+        android:textSize="32sp"
+        android:layout_margin="32dp"
+        android:textStyle="bold"
+        android:id="@+id/headerTV"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
         android:layout_centerInParent="true"
-        android:text="Login"/>
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"
+            android:hint="@string/email_hints"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/emailET"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"
+            android:hint="@string/password_hints"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/passwordET"
+            android:padding="10dp"/>
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="22sp"
+        android:layout_marginTop="22sp"
+        android:layout_marginEnd="22sp"
+        android:layout_marginBottom="22sp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateTint="@color/colorPrimary" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        android:textSize="18sp"
+        android:background="@drawable/btn"
+        android:layout_above="@id/signup_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#fff"
+        android:id="@+id/loginBtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account_sign_up"
+        android:textColor="#673ab7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/signup_tv"/>
 
 
 </RelativeLayout>

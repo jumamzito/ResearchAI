@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
     tools:context=".RegisterActivity">
 
     <TextView
@@ -12,7 +13,9 @@
         android:text="@string/register"
         android:textSize="26sp"
         android:textStyle="bold"
-        android:layout_margin="32dp"/>
+        android:textColor="#FFF"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="26dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -87,16 +90,33 @@
         android:layout_above="@+id/registerBtn"/>
 
     <Button
+        android:id="@+id/registerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/registerBtn"
+        android:layout_above="@+id/login_tv"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="32dp"
         android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn"
         android:minWidth="160dp"
         android:text="@string/register_btn_name"
-        android:textColor="@android:color/white"
-        android:background="@drawable/btn"/>
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_tv"
+        android:text="@string/already_signed_up_login"
+        android:textColor="#673ab7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
 
 
 </RelativeLayout>
