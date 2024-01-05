@@ -34,4 +34,8 @@
     <string name="object_detection_view">Object Detection</string>
     <string name="objectdetectioninfo">objectDetectionInfo</string>
     <string name="about_object_detection">About Object Detection</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="load_from_gallery">Load from Gallery</string>
+    <string name="prediction_result">Prediction Result:</string>
+    <string name="predict">Predict</string>
 </resources>
