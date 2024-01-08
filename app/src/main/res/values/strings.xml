@@ -38,4 +38,5 @@
     <string name="load_from_gallery">Load from Gallery</string>
     <string name="prediction_result">Prediction Result:</string>
     <string name="predict">Predict</string>
+    <string name="arabiensis_object_detection">Arabiensis Object Detection</string>
 </resources>

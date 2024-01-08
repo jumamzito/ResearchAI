@@ -65,7 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-                finish();
+//                finish();
             }
         });
         registerBtn.setOnClickListener(new View.OnClickListener() {
@@ -142,7 +142,7 @@ public class RegisterActivity extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Toast.makeText(RegisterActivity.this,"Welcome Here",Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
-                            finish();
+//                            finish();
 
                         }
                         else{

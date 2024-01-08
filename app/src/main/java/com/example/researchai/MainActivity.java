@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,ClassificationActivity.class));
-                finish();
+//                finish();
             }
         });
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,ObjectdetectionActivity.class));
-                finish();
+//                finish();
             }
         });
 

@@ -28,7 +28,7 @@ public class ClassificationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ClassificationActivity.this,AnophelesClassificationActivity.class));
-                finish();
+//                finish();
             }
         });
 
@@ -36,7 +36,7 @@ public class ClassificationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ClassificationActivity.this,GambieActivity.class));
-                finish();
+//                finish();
             }
         });
 

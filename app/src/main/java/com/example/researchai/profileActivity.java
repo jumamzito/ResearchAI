@@ -124,7 +124,7 @@ public class profileActivity extends AppCompatActivity {
             public void onClick(View v) {
                 auth.signOut();
                 startActivity(new Intent(profileActivity.this,LoginActivity.class));
-                finish();
+//                finish();
             }
         });
 
