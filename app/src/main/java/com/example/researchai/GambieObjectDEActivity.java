@@ -38,7 +38,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.List;
 
-public class ArabiensisObjectedetectionActivity extends AppCompatActivity {
+public class GambieObjectDEActivity extends AppCompatActivity {
 
     private Paint paint = new Paint();
     private ImageView imageViewTv;
@@ -59,7 +59,7 @@ public class ArabiensisObjectedetectionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arabiensis_objectedetection);
+        setContentView(R.layout.activity_gambie_object_deactivity);
 
         try {
             model = AutoModel1.newInstance(this);
@@ -97,7 +97,7 @@ public class ArabiensisObjectedetectionActivity extends AppCompatActivity {
         btnRealTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ArabiensisObjectedetectionActivity.this, realtimeArabiensisODActivity.class));
+                startActivity(new Intent(GambieObjectDEActivity.this, GambieRealtimeOBActivity.class));
             }
         });
 

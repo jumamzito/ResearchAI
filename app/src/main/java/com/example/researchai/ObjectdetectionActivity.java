@@ -36,7 +36,7 @@ public class ObjectdetectionActivity extends AppCompatActivity {
         gambieObjectDetection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ObjectdetectionActivity.this,GambieActivity.class));
+                startActivity(new Intent(ObjectdetectionActivity.this,GambieObjectDEActivity.class));
 //                finish();
             }
         });

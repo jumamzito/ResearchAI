@@ -190,7 +190,7 @@ public class AnophelesClassificationActivity extends AppCompatActivity {
 
             if (confidence > confidenceThreshold) {
                 // The model predicts the positive class
-                tvPredictionResult.setText("Male");
+                tvPredictionResult.setText(R.string.male);
             } else {
                 // The model predicts the negative class
                 tvPredictionResult.setText("Female");
