@@ -24,7 +24,7 @@
     <string name="tell_your_friend">Tell Your Friend</string>
     <string name="logout">Logout</string>
     <string name="update">Update</string>
-    <string name="classification_tab">Classification</string>
+    <string name="classification_tab">Arabiensis Classification</string>
     <string name="anopheles_arabiensis">anopheles_arabiensis</string>
     <string name="anopheles_arabiensis_name">Anopheles Arabiensis</string>
     <string name="anopheles_gambiae">Anopheles gambiae</string>
@@ -39,4 +39,10 @@
     <string name="prediction_result">Prediction Result:</string>
     <string name="predict">Predict</string>
     <string name="arabiensis_object_detection">Arabiensis Object Detection</string>
+    <string name="realtime_detection">Realtime Detection</string>
+    <string name="realtime_arabiensis_detection">RealTime Arabiensis Detection</string>
+    <string name="male">Male</string>
+    <string name="gambie_classification">Gambie Classification</string>
+    <string name="real_time_gambie_detection">Real Time Gambie Detection</string>
+    <string name="gambie_object_detection">Gambie Object Detection</string>
 </resources>

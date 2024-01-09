@@ -32,7 +32,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="-6dp" />
+                tools:layout_editor_absoluteY="-6dp"/>
 
 
         </RelativeLayout>

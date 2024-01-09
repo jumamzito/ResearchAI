@@ -26,6 +26,15 @@
         android:theme="@style/Theme.ResearchAI"
         tools:targetApi="31">
         <activity
+            android:name=".GambieRealtimeOBActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GambieObjectDEActivity"
+            android:exported="false" />
+        <activity
+            android:name=".realtimeArabiensisODActivity"
+            android:exported="false" />
+        <activity
             android:name=".ArabiensisObjectedetectionActivity"
             android:exported="false" />
         <activity
